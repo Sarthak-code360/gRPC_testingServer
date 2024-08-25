@@ -1,0 +1,29 @@
+#version: v2
+#managed:
+#  enabled: true
+#plugins:
+#  - plugin: buf.build/bufbuild/es:v1.7.2
+#    opt: target=ts
+#    out: src/grpc
+#  - plugin: buf.build/connectrpc/es:v1.4.0
+#    opt: target=ts
+#    out: src/grpc
+##plugins:
+##  - remote: buf.build/grpc/node:v1.12.4
+##    out: src/grpc
+##  - remote: buf.build/protocolbuffers/js:v3.21.2
+##    out: src/grpc
+#
+
+# buf.gen.yaml
+version: v2
+managed:
+  enabled: true
+plugins:
+  - remote: buf.build/connectrpc/es:v1.4.0
+    opt: target=ts
+    out: src/grpc
+  - remote: buf.build/bufbuild/es:v1.7.2
+    opt: target=ts
+    out: src/grpc
+
