@@ -1,22 +1,14 @@
 # microservice template
 
+``` Powershell
+npm install
+yarn dev
+```
+
 ```Bash
-#for http/1
-evans \
-  --path=protofiles/ \
-  --proto=ping/v1/ping.proto \
-  --host localhost \
-  --port 3000 --web
-
-#for http/2
-evans \
-  --path=protofiles/ \
-  --proto=ping/v1/ping.proto \
-  --host localhost \
-  --port 3000
-
 grpcui \
   -import-path=protofiles/ \
   -proto=ping/v1/ping.proto \
   -plaintext localhost:3000
 ```
+Make change in .proto files to add new entities and in index.ts to see changes
