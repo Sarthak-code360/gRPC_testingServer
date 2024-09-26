@@ -8,8 +8,14 @@ service PingService {
 
 message PingRequest {
   string message = 1;
+  string name = 2;
 }
 
 message PingResponse {
   string message = 1;
 }
+
+
+// in c all proto folder and buf. files -tcp/ip
+// update buf.gen to generate c client for grpc comminucatuion
+// use that client to communicate to server to test connectivity
