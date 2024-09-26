@@ -5,6 +5,7 @@ First run the server:
 npm install
 yarn dev
 ```
+Unlike REST, the Remote Procedure Call are type-safe, but they are regular HTTP under the hood. You can see all requests in the network inspector,
 
 Then, come to gRPC testing window: (run command in bash)
 ```Bash
