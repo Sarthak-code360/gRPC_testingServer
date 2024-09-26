@@ -11,4 +11,5 @@ grpcui \
   -proto=ping/v1/ping.proto \
   -plaintext localhost:3000
 ```
-Make change in .proto files to add new entities and in index.ts to see changes
+
+Make changes in .proto files to add new entities and in index.ts to see changes
