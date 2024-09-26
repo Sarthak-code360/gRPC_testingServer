@@ -1,10 +1,12 @@
 # microservice template
 
+First run the server:
 ``` Powershell
 npm install
 yarn dev
 ```
 
+Then, come to gRPC testing window: (run command in bash)
 ```Bash
 grpcui \
   -import-path=protofiles/ \
