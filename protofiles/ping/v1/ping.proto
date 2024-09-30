@@ -9,6 +9,8 @@ service PingService {
 message PingRequest {
   string message = 1;
   string name = 2;
+  string device_name = 3;
+  int curr = 4;
 }
 
 message PingResponse {
