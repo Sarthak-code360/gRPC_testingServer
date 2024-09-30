@@ -16,3 +16,5 @@ grpcui \
 ```
 
 Make changes in .proto files to add new entities and in index.ts to see changes
+
+Keep updating the ping.proto file for data requests 
